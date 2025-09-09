@@ -1,0 +1,24 @@
+{
+  "name": "github-metrics-demo",
+  "version": "1.0.0",
+  "description": "Demo repository for GitHub metrics dashboard",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "webpack",
+    "start": "node index.js"
+  },
+  "keywords": ["demo", "metrics", "github"],
+  "author": "AI Performance Dashboard Team",
+  "license": "MIT",
+  "dependencies": {
+    "express": "4.16.0",
+    "lodash": "4.17.15",
+    "axios": "0.21.1",
+    "moment": "2.29.1"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "webpack": "^5.0.0"
+  }
+}
