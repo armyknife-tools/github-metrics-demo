@@ -1,24 +1,22 @@
 {
   "name": "github-metrics-demo",
   "version": "1.0.0",
-  "description": "Demo repository for GitHub metrics dashboard",
+  "description": "Demo repository showcasing all GitHub metrics tracked by the AI Performance Dashboard",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "build": "webpack",
-    "start": "node index.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js"
   },
-  "keywords": ["demo", "metrics", "github"],
-  "author": "AI Performance Dashboard Team",
-  "license": "MIT",
   "dependencies": {
     "express": "4.16.0",
-    "lodash": "4.17.15",
-    "axios": "0.21.1",
-    "moment": "2.29.1"
+    "lodash": "4.17.11",
+    "moment": "2.24.0",
+    "axios": "0.18.0"
   },
   "devDependencies": {
-    "jest": "^29.0.0",
-    "webpack": "^5.0.0"
-  }
+    "jest": "24.0.0"
+  },
+  "keywords": ["demo", "metrics", "github"],
+  "author": "ArmyKnife Tools",
+  "license": "MIT"
 }
