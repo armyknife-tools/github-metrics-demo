@@ -1,0 +1,20 @@
+# Code Owners for github-metrics-demo
+# This file defines who is responsible for code review in different parts of the repository
+
+# Default owners for everything in the repo
+* @armyknife-tools
+
+# API and backend code
+/src/*.js @armyknife-tools @armyknife-docs
+/src/api/ @armyknife-tools
+
+# Documentation
+*.md @armyknife-docs
+/docs/ @armyknife-docs
+
+# Configuration files
+package.json @armyknife-tools
+*.json @armyknife-tools
+
+# Workflows and CI/CD
+/.github/ @armyknife-tools
