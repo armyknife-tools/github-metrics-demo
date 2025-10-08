@@ -11,7 +11,7 @@
     "express": "4.16.0",
     "lodash": "4.17.11",
     "moment": "2.24.0",
-    "axios": "0.18.0"
+    "axios": "0.30.2"
   },
   "devDependencies": {
     "jest": "24.0.0"
