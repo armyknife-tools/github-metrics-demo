@@ -5,3 +5,4 @@ class Database {
   async find(key) { return this.data.get(key); }
 }
 module.exports = { Database };
+// cache
