@@ -9,6 +9,33 @@ const PORT = process.env.PORT || 3000;
 // Middleware
 app.use(express.json());
 
+// Enhanced error handling middleware
+app.use((err, req, res, next) => {
+  console.error('Error occurred:', {
+    message: err.message,
+    stack: err.stack,
+    timestamp: moment().format()
+  });
+
+  res.status(err.status || 500).json({
+    error: {
+      message: err.message || 'Internal Server Error',
+      timestamp: moment().format(),
+      path: req.path
+    }
+  });
+});
+
+// Request logging middleware
+app.use((req, res, next) => {
+  console.log(`${req.method} ${req.path}`, {
+    timestamp: moment().format(),
+    query: req.query,
+    body: req.body
+  });
+  next();
+});
+
 // Routes
 app.get('/', (req, res) => {
   res.json({
